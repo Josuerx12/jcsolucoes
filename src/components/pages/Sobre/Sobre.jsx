@@ -4,6 +4,7 @@ import Menubar from "../../Menubar/Menu"
 import Box from "../../Box/Box"
 
 import JcLogo from "../../../assets/imgs/jclogo.png"
+import Footer from '../../Footer/Footer'
 import FounderPic from "../../../assets/imgs/founderpic.jpg"
 import './Sobre.sass'
 
@@ -17,6 +18,7 @@ const Sobre = () => {
         <h2>Colaboradores</h2>
         <Box img={FounderPic} titulo="Josue Carvalho" subtitulo="Fundador da JC-Soluções - TI - Desenvolvedor-Front-End" texto="Olá, me chamo Josué, hoje venho atuando na área da Tecnologia da Informação e adoro resolver problemas da área, atualmente estudando as tecnologias de desenvolvimento Web e atualmente estou tentando migrar para área de Desenvolvimento de Softwares e sites, essa pagina foi criada por mim desde o zero com a intenção de mostrar minhas habilidades como desenvolvedor Web e também poder ajudar pessoas que necessitam de ajuda com seus problemas tecnológicos realizando tarefas da área de Gestão de TI, como formatar um (Desktop/Notebook), fazer upgrades(Melhorar) os equipamentos para maior desempenho e funcionamento, montagem de computadores gamers e para trabalhos, instalação e configuração de pontos de rede e entre outras atividades de um TI, se você estiver precisando de algum desses serviços é só fazer um contato indo em menu e clicando no botão de orçamento. Caso queria me contratar para sua empresa meu currículo abaixo!" botao1="Download CV" link1="https://drive.google.com/" target1="_blank"/>
       </section>
+      <Footer />
     </>
     
   )
