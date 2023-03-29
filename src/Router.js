@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import React from 'react'
 
-import Inicio from "./componets/pages/Inicio/Inicio"
-import Sobre from "./componets/pages/Sobre/Sobre"
-import Trabalhos from "./componets/pages/Trabalhos/Trabalhos"
-import Contato from "./componets/pages/Contato/Contato"
+import Inicio from "./components/pages/Inicio/Inicio"
+import Sobre from "./components/pages/Sobre/Sobre"
+import Trabalhos from "./components/pages/Trabalhos/Trabalhos"
+import Contato from "./components/pages/Contato/Contato"
 
 const Router = () => {
   return (
@@ -13,9 +13,9 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<Inicio />} path="/"/>
-                <Route component={<Sobre />} path="/sobre"/>
-                <Route component={<Trabalhos />} path="/trabalhos"/>
-                <Route component={<Contato />} path="/contato"/>
+                <Route element={<Sobre />} path="/Sobre"/>
+                <Route element={<Trabalhos />} path="/Trabalhos"/>
+                <Route element={<Contato />} path="/Contato"/>
             </Routes>
         </BrowserRouter>
     </>

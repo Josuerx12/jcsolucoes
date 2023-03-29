@@ -1,0 +1,66 @@
+.Box
+    display: flex
+    width: fit-content
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 3rem auto
+    text-align: center
+    padding: 1rem
+    border: 2px solid #111
+    background: #999
+    border-radius: .5rem
+    cursor: default
+    & img
+        width: 10rem
+        height: 10rem
+        border-radius: 50%
+        border: 1px solid #ccc
+        cursor: pointer
+        box-shadow: 0px 0px 4px 0px #1d1d1d
+    & h3
+        font-size: 2rem
+        font-weight: bold
+        color: #111
+    & h5
+        font-size: 1.2rem
+        font-weight: 500
+        color: #222
+        margin-bottom: 1.6rem
+    & p
+        max-width: 750px
+        text-align: justify
+
+.buttons
+    margin: 1rem 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 1rem
+    & a
+        padding: 0.4rem 1rem
+        border-radius: .3rem
+        background: #222
+        font-size: 1.2rem
+        color: #f1f1f1
+        text-align: center
+        border: 1px solid #ccc
+        transition: .3s ease-in-out
+        animation: ZoomBtn 4s infinite
+        &:hover
+            box-shadow: 0px 0px 10px 2px #1d1d1d
+            background: #333
+            color: #fff
+
+@keyframes ZoomBtn
+    0%
+        transform: translateY(10px)
+    50%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0px)
+        
+
+@media ( max-width: 800px )
+    .Box
+        margin: 3rem 2rem

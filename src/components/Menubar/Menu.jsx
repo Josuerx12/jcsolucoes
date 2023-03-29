@@ -1,18 +1,25 @@
 import React from 'react'
 import {FaBars} from "react-icons/fa"
 import { Link } from 'react-router-dom'
-
+import { useState } from 'react'
 
 import "./Menu.sass"
 
 const Menu = () => {
+  const [open, setOpen] = useState(true)
+
+  function toggleMenu () {
+    setOpen(!open)
+  }
+
+  console.log (open)
   return (
     <>
       <div className='menu'>
         <div className="menu-logo">
-          JC-Soluções
+          <h1>JC <span>Soluções</span></h1>
         </div>
-        <div className="menu-list">
+        <div className={open ? "menu-list" : "menu-mobile"}>
           <ul>
             <li>
               <Link to="/">Inicio</Link>
@@ -31,8 +38,8 @@ const Menu = () => {
             </li>
           </ul>
         </div>
+        <FaBars onClick={toggleMenu} className='menu-icon'/>
       </div>
-      <FaBars className='menu-icon'/>
     </>
   )
 }
