@@ -10,7 +10,7 @@ import Contato from "./components/pages/Contato/Contato"
 const Router = () => {
   return (
     <>
-        <BrowserRouter>
+        <BrowserRouter basename="/portifolio/">
             <Routes>
                 <Route element={<Inicio />} path="/"/>
                 <Route element={<Sobre />} path="/Sobre"/>
