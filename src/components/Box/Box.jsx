@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaChevronRight} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 import './Box.sass'
@@ -11,7 +12,7 @@ const box = (props) => {
         <h5>{props.subtitulo}</h5>
         <p>{props.texto}</p>
         <div className="buttons">
-            <Link to={props.link1} target={props.target1}>{props.botao1}</Link>
+            <Link to={props.link1} target={props.target1}><FaChevronRight className='setadireita'/><FaChevronRight className='setadireita'/>{props.botao1}</Link>
             {/* <Link to={props.link2} target={props.target2}>{props.botao2}</Link> */}
         </div>
     </div>

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 
 import Menubar from "../../Menubar/Menu"
 import Box from '../../Box/Box'
+import Footer from '../../Footer/Footer'
 
 import JcLogo from "../../../assets/imgs/jclogo.png"
 
@@ -39,6 +40,7 @@ const Inicio = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
     
   )

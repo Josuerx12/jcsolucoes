@@ -34,7 +34,7 @@ const Menu = () => {
               <Link to="/contato">Contato</Link>
             </li>
             <li>
-              <Link to="" target='_black'>Orçamento</Link>
+              <Link to="https://forms.office.com/r/jifUn51Aph" target='_black'>Orçamento</Link>
             </li>
           </ul>
         </div>
